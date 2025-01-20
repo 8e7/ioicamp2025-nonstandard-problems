@@ -12,7 +12,7 @@ int main() {
 			int low = 0, up = siz, mid;
 			int len = tryCombination(cur);
 			if (len == -1) len = siz;
-			int con = len > i ? 1 : 0;
+			int con = len > i ? 1 : 0; //the switch state which closes door i
 			while (low < up - 1) {
 				mid = (low + up) / 2;
 				for (int j = low;j < mid;j++) {
